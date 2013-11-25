@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7a23d746-088f-42de-93e1-668aab384d9e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:33895/ZhEasySnmp.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ZhEasySnmp.xsd" MetadataType="Schema" ID="fa50b140-ac28-4221-ac44-dd6af9b5bf3f" SourceId="1" SourceUrl="http://localhost:33895/ZhEasySnmp.svc?xsd=xsd1" />
+    <MetadataFile FileName="ZhEasySnmp.disco" MetadataType="Disco" ID="97ed83c0-94de-48b6-9e15-b9ca151866ba" SourceId="1" SourceUrl="http://localhost:33895/ZhEasySnmp.svc?disco" />
+    <MetadataFile FileName="EasySnmp.wsdl" MetadataType="Wsdl" ID="237c104e-9dc1-400b-921f-ad424073f6f1" SourceId="1" SourceUrl="http://localhost:33895/ZhEasySnmp.svc?wsdl" />
+    <MetadataFile FileName="ZhEasySnmp1.xsd" MetadataType="Schema" ID="016dcfb7-6e1e-4ab9-bdad-7f3b7f16bb22" SourceId="1" SourceUrl="http://localhost:33895/ZhEasySnmp.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

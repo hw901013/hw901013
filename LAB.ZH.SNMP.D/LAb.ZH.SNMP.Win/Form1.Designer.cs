@@ -1,0 +1,521 @@
+﻿namespace LAb.ZH.SNMP.Win
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txb_count = new System.Windows.Forms.TextBox();
+            this.txb_xc = new System.Windows.Forms.TextBox();
+            this.lb2 = new System.Windows.Forms.Label();
+            this.lb1 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lb_bs = new System.Windows.Forms.Label();
+            this.lb_Name = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bt_restart = new System.Windows.Forms.Button();
+            this.bt_stop = new System.Windows.Forms.Button();
+            this.bt_start = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.treeView = new System.Windows.Forms.TreeView();
+            this.btn获取拓扑 = new System.Windows.Forms.Button();
+            this.tx_tp = new System.Windows.Forms.TextBox();
+            this.bt_ok = new System.Windows.Forms.Button();
+            this.bt_cancol = new System.Windows.Forms.Button();
+            this.bt_yy = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.lblDbpath = new System.Windows.Forms.Label();
+            this.lbl刷新间隔时间 = new System.Windows.Forms.Label();
+            this.lbl数据库类型 = new System.Windows.Forms.Label();
+            this.lbl网络设备表SQl = new System.Windows.Forms.Label();
+            this.lbl服务器表SQL = new System.Windows.Forms.Label();
+            this.lbl翻译语句SQL = new System.Windows.Forms.Label();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(424, 352);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(416, 327);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "基本信息";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txb_count);
+            this.groupBox2.Controls.Add(this.txb_xc);
+            this.groupBox2.Controls.Add(this.lb2);
+            this.groupBox2.Controls.Add(this.lb1);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox2.Location = new System.Drawing.Point(3, 185);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(410, 96);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "运行状态";
+            // 
+            // txb_count
+            // 
+            this.txb_count.Location = new System.Drawing.Point(116, 57);
+            this.txb_count.Name = "txb_count";
+            this.txb_count.Size = new System.Drawing.Size(100, 21);
+            this.txb_count.TabIndex = 3;
+            // 
+            // txb_xc
+            // 
+            this.txb_xc.Location = new System.Drawing.Point(116, 18);
+            this.txb_xc.Name = "txb_xc";
+            this.txb_xc.Size = new System.Drawing.Size(100, 21);
+            this.txb_xc.TabIndex = 2;
+            // 
+            // lb2
+            // 
+            this.lb2.AutoSize = true;
+            this.lb2.Location = new System.Drawing.Point(29, 60);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(59, 12);
+            this.lb2.TabIndex = 1;
+            this.lb2.Text = "返回个数:";
+            // 
+            // lb1
+            // 
+            this.lb1.AutoSize = true;
+            this.lb1.Location = new System.Drawing.Point(27, 21);
+            this.lb1.Name = "lb1";
+            this.lb1.Size = new System.Drawing.Size(83, 12);
+            this.lb1.TabIndex = 0;
+            this.lb1.Text = "线程运行状态:";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.lb_bs);
+            this.groupBox3.Controls.Add(this.lb_Name);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox3.Location = new System.Drawing.Point(3, 91);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(410, 94);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "服务基本信息";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // lb_bs
+            // 
+            this.lb_bs.AutoSize = true;
+            this.lb_bs.Location = new System.Drawing.Point(29, 61);
+            this.lb_bs.Name = "lb_bs";
+            this.lb_bs.Size = new System.Drawing.Size(59, 12);
+            this.lb_bs.TabIndex = 1;
+            this.lb_bs.Text = "部署位置:";
+            // 
+            // lb_Name
+            // 
+            this.lb_Name.AutoSize = true;
+            this.lb_Name.Location = new System.Drawing.Point(29, 27);
+            this.lb_Name.Name = "lb_Name";
+            this.lb_Name.Size = new System.Drawing.Size(59, 12);
+            this.lb_Name.TabIndex = 0;
+            this.lb_Name.Text = "服务名称:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.bt_restart);
+            this.groupBox1.Controls.Add(this.bt_stop);
+            this.groupBox1.Controls.Add(this.bt_start);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(410, 88);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "启动状态";
+            // 
+            // bt_restart
+            // 
+            this.bt_restart.Location = new System.Drawing.Point(159, 36);
+            this.bt_restart.Name = "bt_restart";
+            this.bt_restart.Size = new System.Drawing.Size(75, 23);
+            this.bt_restart.TabIndex = 2;
+            this.bt_restart.Text = "重启";
+            this.bt_restart.UseVisualStyleBackColor = true;
+            // 
+            // bt_stop
+            // 
+            this.bt_stop.Location = new System.Drawing.Point(287, 36);
+            this.bt_stop.Name = "bt_stop";
+            this.bt_stop.Size = new System.Drawing.Size(75, 23);
+            this.bt_stop.TabIndex = 1;
+            this.bt_stop.Text = "停止";
+            this.bt_stop.UseVisualStyleBackColor = true;
+            // 
+            // bt_start
+            // 
+            this.bt_start.Location = new System.Drawing.Point(27, 36);
+            this.bt_start.Name = "bt_start";
+            this.bt_start.Size = new System.Drawing.Size(75, 23);
+            this.bt_start.TabIndex = 0;
+            this.bt_start.Text = "开始";
+            this.bt_start.UseVisualStyleBackColor = true;
+            this.bt_start.Click += new System.EventHandler(this.bt_start_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.textBox5);
+            this.tabPage3.Controls.Add(this.textBox4);
+            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Controls.Add(this.textBox2);
+            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.textBox);
+            this.tabPage3.Controls.Add(this.lbl翻译语句SQL);
+            this.tabPage3.Controls.Add(this.lbl服务器表SQL);
+            this.tabPage3.Controls.Add(this.lbl网络设备表SQl);
+            this.tabPage3.Controls.Add(this.lbl数据库类型);
+            this.tabPage3.Controls.Add(this.lbl刷新间隔时间);
+            this.tabPage3.Controls.Add(this.lblDbpath);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(416, 327);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "环境变量配置";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 21);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(416, 327);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "日志记录";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(416, 327);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "信息初步查询";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.treeView);
+            this.tabPage5.Controls.Add(this.btn获取拓扑);
+            this.tabPage5.Controls.Add(this.tx_tp);
+            this.tabPage5.Location = new System.Drawing.Point(4, 21);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(416, 327);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "拖朴树";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // treeView
+            // 
+            this.treeView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.treeView.LineColor = System.Drawing.Color.Red;
+            this.treeView.Location = new System.Drawing.Point(3, 51);
+            this.treeView.Name = "treeView";
+            this.treeView.Size = new System.Drawing.Size(410, 273);
+            this.treeView.TabIndex = 2;
+            // 
+            // btn获取拓扑
+            // 
+            this.btn获取拓扑.Location = new System.Drawing.Point(203, 6);
+            this.btn获取拓扑.Name = "btn获取拓扑";
+            this.btn获取拓扑.Size = new System.Drawing.Size(75, 23);
+            this.btn获取拓扑.TabIndex = 1;
+            this.btn获取拓扑.Text = "获取拓扑";
+            this.btn获取拓扑.UseVisualStyleBackColor = true;
+            this.btn获取拓扑.Click += new System.EventHandler(this.btn获取拓扑_Click);
+            // 
+            // tx_tp
+            // 
+            this.tx_tp.Location = new System.Drawing.Point(40, 8);
+            this.tx_tp.Name = "tx_tp";
+            this.tx_tp.Size = new System.Drawing.Size(100, 21);
+            this.tx_tp.TabIndex = 0;
+            // 
+            // bt_ok
+            // 
+            this.bt_ok.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bt_ok.Location = new System.Drawing.Point(157, 12);
+            this.bt_ok.Name = "bt_ok";
+            this.bt_ok.Size = new System.Drawing.Size(75, 23);
+            this.bt_ok.TabIndex = 3;
+            this.bt_ok.Text = "确定";
+            this.bt_ok.UseVisualStyleBackColor = true;
+            // 
+            // bt_cancol
+            // 
+            this.bt_cancol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_cancol.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bt_cancol.Location = new System.Drawing.Point(251, 12);
+            this.bt_cancol.Name = "bt_cancol";
+            this.bt_cancol.Size = new System.Drawing.Size(75, 23);
+            this.bt_cancol.TabIndex = 4;
+            this.bt_cancol.Text = "取消";
+            this.bt_cancol.UseVisualStyleBackColor = true;
+            // 
+            // bt_yy
+            // 
+            this.bt_yy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_yy.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bt_yy.Enabled = false;
+            this.bt_yy.Location = new System.Drawing.Point(342, 12);
+            this.bt_yy.Name = "bt_yy";
+            this.bt_yy.Size = new System.Drawing.Size(75, 23);
+            this.bt_yy.TabIndex = 5;
+            this.bt_yy.Text = "应用";
+            this.bt_yy.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.tabControl1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.bt_ok);
+            this.splitContainer1.Panel2.Controls.Add(this.bt_yy);
+            this.splitContainer1.Panel2.Controls.Add(this.bt_cancol);
+            this.splitContainer1.Size = new System.Drawing.Size(424, 403);
+            this.splitContainer1.SplitterDistance = 352;
+            this.splitContainer1.TabIndex = 6;
+            // 
+            // lblDbpath
+            // 
+            this.lblDbpath.Location = new System.Drawing.Point(8, 18);
+            this.lblDbpath.Name = "lblDbpath";
+            this.lblDbpath.Size = new System.Drawing.Size(100, 23);
+            this.lblDbpath.TabIndex = 0;
+            this.lblDbpath.Text = "数据库配置路径";
+            // 
+            // lbl刷新间隔时间
+            // 
+            this.lbl刷新间隔时间.Location = new System.Drawing.Point(8, 41);
+            this.lbl刷新间隔时间.Name = "lbl刷新间隔时间";
+            this.lbl刷新间隔时间.Size = new System.Drawing.Size(100, 23);
+            this.lbl刷新间隔时间.TabIndex = 1;
+            this.lbl刷新间隔时间.Text = "刷新间隔时间";
+            // 
+            // lbl数据库类型
+            // 
+            this.lbl数据库类型.Location = new System.Drawing.Point(8, 79);
+            this.lbl数据库类型.Name = "lbl数据库类型";
+            this.lbl数据库类型.Size = new System.Drawing.Size(100, 23);
+            this.lbl数据库类型.TabIndex = 2;
+            this.lbl数据库类型.Text = "数据库类型";
+            // 
+            // lbl网络设备表SQl
+            // 
+            this.lbl网络设备表SQl.Location = new System.Drawing.Point(8, 124);
+            this.lbl网络设备表SQl.Name = "lbl网络设备表SQl";
+            this.lbl网络设备表SQl.Size = new System.Drawing.Size(100, 23);
+            this.lbl网络设备表SQl.TabIndex = 3;
+            this.lbl网络设备表SQl.Text = "网络设备表SQl";
+            // 
+            // lbl服务器表SQL
+            // 
+            this.lbl服务器表SQL.Location = new System.Drawing.Point(8, 186);
+            this.lbl服务器表SQL.Name = "lbl服务器表SQL";
+            this.lbl服务器表SQL.Size = new System.Drawing.Size(100, 23);
+            this.lbl服务器表SQL.TabIndex = 4;
+            this.lbl服务器表SQL.Text = "服务器表SQL";
+            // 
+            // lbl翻译语句SQL
+            // 
+            this.lbl翻译语句SQL.Location = new System.Drawing.Point(8, 235);
+            this.lbl翻译语句SQL.Name = "lbl翻译语句SQL";
+            this.lbl翻译语句SQL.Size = new System.Drawing.Size(100, 23);
+            this.lbl翻译语句SQL.TabIndex = 5;
+            this.lbl翻译语句SQL.Text = "翻译语句SQL";
+            // 
+            // textBox
+            // 
+            this.textBox.Location = new System.Drawing.Point(100, 11);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(100, 21);
+            this.textBox.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(100, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(100, 76);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 21);
+            this.textBox2.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(100, 124);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 21);
+            this.textBox3.TabIndex = 9;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(100, 183);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 21);
+            this.textBox4.TabIndex = 10;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(100, 232);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 21);
+            this.textBox5.TabIndex = 11;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(424, 403);
+            this.Controls.Add(this.splitContainer1);
+            this.Name = "Form1";
+            this.Text = "Wcf网络监控平台";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TextBox txb_count;
+        private System.Windows.Forms.TextBox txb_xc;
+        private System.Windows.Forms.Label lb2;
+        private System.Windows.Forms.Label lb1;
+        private System.Windows.Forms.Button bt_restart;
+        private System.Windows.Forms.Button bt_stop;
+        private System.Windows.Forms.Button bt_start;
+        private System.Windows.Forms.Button bt_yy;
+        private System.Windows.Forms.Button bt_cancol;
+        private System.Windows.Forms.Button bt_ok;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label lb_Name;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label lb_bs;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TreeView treeView;
+        private System.Windows.Forms.Button btn获取拓扑;
+        private System.Windows.Forms.TextBox tx_tp;
+        private System.Windows.Forms.Label lblDbpath;
+        private System.Windows.Forms.Label lbl数据库类型;
+        private System.Windows.Forms.Label lbl刷新间隔时间;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.Label lbl翻译语句SQL;
+        private System.Windows.Forms.Label lbl服务器表SQL;
+        private System.Windows.Forms.Label lbl网络设备表SQl;
+    }
+}
+

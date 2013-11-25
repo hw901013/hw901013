@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="LAB.ZH.SNMP.WCF.B.EasySnmp" CodeBehind="ZhEasySnmp.svc.cs" %>

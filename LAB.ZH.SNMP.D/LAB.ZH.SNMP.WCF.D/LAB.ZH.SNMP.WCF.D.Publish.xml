@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://192.168.0.239/SNMP" deleteExistingFiles="True" ftpAnonymousLogin="True" ftpPassiveMode="True" msdeploySite="Snmp/WCFSnmpService" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FTP" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False" />
+  <publishProfile publishUrl="ftp://192.168.0.239/SNMP" deleteExistingFiles="True" ftpAnonymousLogin="True" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件2" publishMethod="FPSE" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="07/09/2013 12:49:27" />
+    <file relUrl="bin/LAB.ZH.SNMP.D.dll" publishTime="07/09/2013 10:29:00" />
+    <file relUrl="bin/SnmpSharpNet.dll" publishTime="01/28/2013 16:36:52" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="07/02/2013 11:00:18" />
+    <file relUrl="Service1.svc" publishTime="07/05/2013 12:42:19" />
+    <file relUrl="bin/MessageLibrary.dll" publishTime="05/14/2013 13:35:37" />
+    <file relUrl="bin/LAB.ZH.SNMP.D.pdb" publishTime="07/09/2013 10:29:00" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="07/02/2013 11:01:10" />
+    <file relUrl="bin/LAB.ZH.SNMP.WCF.D.pdb" publishTime="07/09/2013 10:29:00" />
+    <file relUrl="bin/LAB.ZH.SNMP.WCF.D.dll" publishTime="07/09/2013 10:29:01" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="07/02/2013 11:01:10" />
+    <file relUrl="App_Data/oid.mdb" publishTime="07/05/2013 14:35:06" />
+    <file relUrl="bin/MySql.Data.dll" publishTime="11/21/2011 09:32:10" />
+    <file relUrl="bin/DBService.pdb" publishTime="06/09/2013 10:03:50" />
+    <file relUrl="bin/DBService.dll" publishTime="06/09/2013 10:03:50" />
+  </publishProfile>
+</publishData>

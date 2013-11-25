@@ -1,0 +1,87 @@
+﻿
+1. SqlQuery\SqlGenerators\Sql2005Generator.cs
+	这里对分页的实现有误，注释掉 PAGING_SQL 和 BuildPagedSelectStatement，采用基类的分页脚本。
+
+2. SqlQuery\SqlGenerators\ANSISqlGenerator.cs
+	BuildPagedSelectStatement 函数中 tweakedWheres 变量非常奇怪，而且重复定义了 where 子句，所以删除 tweakedWheres 变量。
+
+	在包含子查询时，tweakedWheres 也会导致生成的SQL语句不对，比如下面这段代码：
+
+		SqlQuery q = new Select().From<XUser>();
+		q.Where("1").IsEqualTo("1");
+
+		// 在职务名称中搜索
+		string searchText = ttbSearchMessage.Text.Trim();
+		if (!String.IsNullOrEmpty(searchText))
+		{
+			q.And(XUser.NameColumn).ContainsString(searchText);
+		}
+
+		// 排除已经属于本角色的用户
+		int currentRoleId = GetQueryIntValue("id");
+		q.And(XUser.IdColumn).NotIn(new Select(XRoleUser.UserIdColumn).From<XRoleUser>().Where(XRoleUser.RoleIdColumn).IsEqualTo(currentRoleId));
+   
+		// 在查询添加之后，排序和分页之前获取总记录数
+		// Grid1总共有多少条记录
+		Grid1.RecordCount = q.GetRecordCount();
+
+		// 排列
+		q.OrderBys.Add(GetSortExpression(Grid1, XUser.Schema));
+
+		// 数据库分页
+		q.Paged(Grid1.PageIndex + 1, Grid1.PageSize);
+		XUserCollection items = q.ExecuteAsCollection<XUserCollection>();
+
+	
+	生成的SQL语句如下所示：
+
+						
+		DECLARE @Page int
+		DECLARE @PageSize int
+
+		SET @Page = 1
+		SET @PageSize = 20
+
+		SET NOCOUNT ON
+
+		-- create a temp table to hold order ids
+		DECLARE @TempTable TABLE (IndexId int identity, _keyID Int)
+
+		-- insert the table ids and row numbers into the memory table
+		INSERT INTO @TempTable
+		(
+			_keyID
+		)
+		SELECT  [dbo].[X_User].[Id]
+				FROM [dbo].[X_User]
+				WHERE 1 = @10
+				AND [dbo].[X_User].[Id] NOT IN (SELECT [dbo].[X_RoleUser].[UserId]
+					 FROM [dbo].[X_RoleUser]
+					 WHERE [dbo].[X_RoleUser].[RoleId] = @RoleId0
+					)
+
+				AND 1 = @10
+				AND [dbo].[X_User].[Id] NOT IN (SELECT [dbo].[X_RoleUser].[UserId]
+					FROM [dbo].[X_RoleUser]
+					AND [dbo].[X_RoleUser].[RoleId] = @RoleId0
+					)
+				ORDER BY Name DESC
+
+		-- select only those rows belonging to the proper page
+		SELECT [dbo].[X_User].[Id], [dbo].[X_User].[Name], [dbo].[X_User].[Password], [dbo].[X_User].[Enabled], [dbo].[X_User].[Email], [dbo].[X_User].[Gender], [dbo].[X_User].[RealName], [dbo].[X_User].[QQ], [dbo].[X_User].[MSN], [dbo].[X_User].[CellPhone], [dbo].[X_User].[OfficePhone], [dbo].[X_User].[HomePhone], [dbo].[X_User].[Remark], [dbo].[X_User].[DeptId], [dbo].[X_User].[RoleId], [dbo].[X_User].[CreateTime]
+
+		FROM [dbo].[X_User]
+
+		INNER JOIN @TempTable t ON [dbo].[X_User].[Id] = t._keyID
+		WHERE t.IndexId BETWEEN ((@Page - 1) * @PageSize + 1) AND (@Page * @PageSize)
+    
+	这里存在两个错误：
+		1. Where 子句重复了
+		2. 子查询没有 Where 子句，导致SQL脚本错误
+	
+	
+3. DataProviders 中排除了如下几个文件（如果需要，可以再加回来）： 
+	1. AccessDataProvider.cs    
+	2. ELib3DataProvider.cs 
+	3. SQLiteDataProvider.cs            
+                    

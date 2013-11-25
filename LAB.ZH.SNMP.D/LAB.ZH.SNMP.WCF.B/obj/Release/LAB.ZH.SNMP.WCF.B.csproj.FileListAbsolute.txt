@@ -1,0 +1,14 @@
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\LAB.ZH.SNMP.WCF.B.dll
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\LAB.ZH.SNMP.WCF.B.pdb
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\DBService.dll
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\LAB.ZH.SNMP.D.dll
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\log4net.dll
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\Newtonsoft.Json.dll
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\MySql.Data.dll
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\LAB.ZH.SNMP.D.pdb
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\DBService.pdb
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\log4net.xml
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\bin\Newtonsoft.Json.pdb
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\obj\Release\LAB.ZH.SNMP.WCF.B.csprojResolveAssemblyReference.cache
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\obj\Release\LAB.ZH.SNMP.WCF.B.dll
+C:\Users\hw\Desktop\LAB.ZH.SNMP.D\LAB.ZH.SNMP.WCF.B\obj\Release\LAB.ZH.SNMP.WCF.B.pdb

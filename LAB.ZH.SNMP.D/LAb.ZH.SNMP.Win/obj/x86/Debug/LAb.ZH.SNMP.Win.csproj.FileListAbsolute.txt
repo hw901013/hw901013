@@ -1,0 +1,13 @@
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\bin\Debug\LAb.ZH.SNMP.Win.exe.config
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\bin\Debug\LAb.ZH.SNMP.Win.exe
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\bin\Debug\LAb.ZH.SNMP.Win.pdb
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\bin\Debug\Newtonsoft.Json.dll
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\bin\Debug\Newtonsoft.Json.pdb
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\obj\x86\Debug\LAb.ZH.SNMP.Win.Form1.resources
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\obj\x86\Debug\LAb.ZH.SNMP.Win.Properties.Resources.resources
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\obj\x86\Debug\LAb.ZH.SNMP.Win.exe
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\obj\x86\Debug\LAb.ZH.SNMP.Win.pdb
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\LAB.ZH.SNMP.D\LAb.ZH.SNMP.Win\bin\Debug\Newtonsoft.Json.xml

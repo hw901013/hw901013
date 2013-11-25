@@ -1,0 +1,13 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\bin\Release\TEST.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\bin\Release\TEST.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\bin\Release\LAB.ZH.SNMP.D.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\bin\Release\MessageLibrary.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\bin\Release\SnmpSharpNet.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\bin\Release\LAB.ZH.SNMP.D.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\obj\x86\Release\TEST.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\obj\x86\Release\TEST.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\obj\x86\Release\TEST.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\LAB.ZH.SNMP.D\TEST\obj\x86\Release\TEST.pdb

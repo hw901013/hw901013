@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8e9cdb4f-16c2-43e6-90f2-0a28ed211499" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.0.177:6002/ZhEasySnmp.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EasySnmp.wsdl" MetadataType="Wsdl" ID="208df634-c694-4e5f-a0e8-439512bba608" SourceId="1" SourceUrl="http://192.168.0.177:6002/ZhEasySnmp.svc?wsdl" />
+    <MetadataFile FileName="ZhEasySnmp.disco" MetadataType="Disco" ID="732c57a9-bdb3-488a-b933-9570f1f34565" SourceId="1" SourceUrl="http://192.168.0.177:6002/ZhEasySnmp.svc?disco" />
+    <MetadataFile FileName="ZhEasySnmp.xsd" MetadataType="Schema" ID="9ca06a3c-ecfd-49ba-b1d8-89c351653f42" SourceId="1" SourceUrl="http://192.168.0.177:6002/ZhEasySnmp.svc?xsd=xsd0" />
+    <MetadataFile FileName="ZhEasySnmp1.xsd" MetadataType="Schema" ID="98d7cddc-e91f-4b44-866a-7beb20975d66" SourceId="1" SourceUrl="http://192.168.0.177:6002/ZhEasySnmp.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

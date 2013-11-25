@@ -1,0 +1,168 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data;
+
+namespace LAB.ZH.SNMP.WCF.B
+{
+    public class Info
+    {
+        /// <summary>
+        /// 初始化日志记录
+        /// </summary>
+        public MessageLibrary1.MessageClass msg = new MessageLibrary1.MessageClass();
+        /// <summary>
+        /// 电脑IP地址和OID字典
+        /// </summary>
+        Dictionary<string, List<string>> _Ip_PC = new Dictionary<string, List<string>>();
+        /// <summary>
+        /// 电脑IP地址和OID字典
+        /// </summary>
+        public Dictionary<string, List<string>> Ip_PC
+        {
+            get { return _Ip_PC; }
+            set { _Ip_PC = value; }
+        }
+        /// <summary>
+        ///网络设备信息
+        /// </summary>
+        Dictionary<string, List<string>> _Ip_NetWork = new Dictionary<string, List<string>>();
+        /// <summary>
+        ///网络设备信息
+        /// </summary>
+        public Dictionary<string, List<string>> Ip_NetWork
+        {
+            get { return _Ip_NetWork; }
+            set { _Ip_NetWork = value; }
+        }
+        /// <summary>
+        /// 网络设备信息
+        /// </summary>
+        Dictionary<string, Dictionary<string, string>> _Info_NetWork = new Dictionary<string, Dictionary<string, string>>();
+        /// <summary>
+        /// 网络设备信息
+        /// </summary>
+        public Dictionary<string, Dictionary<string, string>> Info_NetWork
+        {
+            get { return _Info_NetWork; }
+            set { _Info_NetWork = value; }
+        }
+        /// <summary>
+        /// 电脑信息
+        /// key：ip Value（oid，内容）
+        /// </summary>
+        Dictionary<string, Dictionary<string, string>> _Info_PC = new Dictionary<string, Dictionary<string, string>>();
+        /// <summary>
+        /// 电脑信息
+        /// key：ip Value（oid，内容）
+        /// </summary>
+        public Dictionary<string, Dictionary<string, string>> Info_PC
+        {
+            get { return _Info_PC; }
+            set { _Info_PC = value; }
+        }
+        /// <summary>
+        /// Walk方法存储信息
+        /// </summary>
+        Dictionary<string, Dictionary<string, string>> _OwnInfo = new Dictionary<string, Dictionary<string, string>>();
+        /// <summary>
+        /// Walk方法存储信息
+        /// </summary>
+        public Dictionary<string, Dictionary<string, string>> OwnInfo
+        {
+            get { return _OwnInfo; }
+            set { _OwnInfo = value; }
+        }
+        /// <summary>
+        /// key:oid
+        /// Value:最后内容
+        /// </summary>
+        static Dictionary<string, Dictionary<string, string>> _FiInfo = new Dictionary<string, Dictionary<string, string>>();
+        /// <summary>
+        /// key:oid
+        /// Value:最后内容
+        /// </summary>
+        public Dictionary<string, Dictionary<string, string>> FiInfo
+        {
+            get { return Info._FiInfo; }
+            set { Info._FiInfo = value; }
+        }
+        /// <summary>
+        /// 拓扑链表
+        /// </summary>
+        static Dictionary<string, List<string>> _TpInfo = new Dictionary<string, List<string>>();
+        /// <summary>
+        /// 拓扑信息
+        /// </summary>
+        public Dictionary<string, List<string>> TpInfo
+        {
+            get { return Info._TpInfo; }
+            set { Info._TpInfo = value; }
+        }
+        /// <summary>
+        /// 交换机信息
+        /// </summary>
+        static Dictionary<string, DataTable> _SwitchInfo = new Dictionary<string, DataTable>();
+        /// <summary>
+        ///交换机信息get
+        /// </summary>
+        public Dictionary<string, DataTable> SwitchInfo
+        {
+            get { return Info._SwitchInfo; }
+            set { Info._SwitchInfo = value; }
+        }
+        /// <summary>
+        /// 服务状态
+        /// </summary>
+        private static string _ServerStatic = "未开启";
+
+        public string ServerStatic
+        {
+            get { return Info._ServerStatic; }
+            set { Info._ServerStatic = value; }
+        }
+
+        /// <summary>
+        /// 服务配置链表
+        /// </summary>
+        Dictionary<string, string> _ServerInfo = new Dictionary<string, string>();
+        public Dictionary<string, string> ServerInfo
+        {
+            get { return _ServerInfo; }
+            set { _ServerInfo = value; }
+        }
+        /// <summary>
+        ///数据库状态
+        /// </summary>
+        static string _DBStatic = "9";
+
+        public string DBStatic
+        {
+            get { return Info._DBStatic; }
+            set { Info._DBStatic = value; }
+        }
+
+        /// <summary>
+        /// 错误信息
+        /// </summary>
+        static Dictionary<string, string> _Errorinfo = new Dictionary<string, string>();
+
+        public Dictionary<string, string> Errorinfo
+        {
+            get { return Info._Errorinfo; }
+            set { Info._Errorinfo = value; }
+        }
+
+
+        static Dictionary<string, string> _alter = new Dictionary<string, string>();
+
+        public  Dictionary<string, string> Alter
+        {
+            get { return Info._alter; }
+            set { Info._alter = value; }
+        }
+
+      
+    }
+}
